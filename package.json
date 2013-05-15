@@ -1,0 +1,33 @@
+{
+  "name": "MiniEvent",
+  "version": "0.0.0",
+  "description": "The smallest Event Emitter / PubSub class you will ever use.",
+  "main": "dist/MiniEvent",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "minievent",
+    "smallest",
+    "event",
+    "emitter",
+    "pubsub",
+    "class"
+  ],
+  "author": "Joseph Ammil Descalzota",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-qunit": "~0.2.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "~0.4.3",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-jsbeautifier": "~0.1.8"
+  }
+}
