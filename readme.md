@@ -1,3 +1,5 @@
+//TEST CHANGE
+
 #MiniEvent
 
 MiniEvent is yet another pub-sub library which, as always, aims to be the lightest and most flexible of it's kind. 
