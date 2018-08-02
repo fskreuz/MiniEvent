@@ -1,33 +1,20 @@
 {
-  "name": "MiniEvent",
-  "version": "0.0.0",
-  "description": "The smallest Event Emitter / PubSub class you will ever use.",
-  "main": "dist/MiniEvent",
-  "directories": {
-    "example": "examples",
-    "test": "tests"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": "",
-  "keywords": [
-    "minievent",
-    "smallest",
-    "event",
-    "emitter",
-    "pubsub",
-    "class"
-  ],
-  "author": "Joseph Ammil Descalzota",
+  "name": "yaps",
+  "version": "1.0.0",
+  "description": "Yet another event emitter.",
   "license": "MIT",
+  "main": "dist/mini-event.js",
+  "module": "dist/mini-event.mjs",
+  "scripts": {
+    "make": "npm run make:esm && npm run make:umd",
+    "make:umd": "rollup -f umd -n mini-event -m -i src/index.js -o dist/mini-event.js",
+    "make:esm": "rollup -f esm -n mini-event -m -i src/index.js -o dist/mini-event.mjs",
+    "lint": "standard src/**/*.js",
+    "test": "rollup -f cjs -m -i src/index.spec.js -o tmp/tests.js && qunit tmp/tests.js"
+  },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-qunit": "~0.2.1",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-watch": "~0.4.3",
-    "grunt-contrib-jshint": "~0.4.3",
-    "grunt-jsbeautifier": "~0.1.8"
+    "qunit": "^2.6.1",
+    "rollup": "^0.63.5",
+    "standard": "^11.0.1"
   }
 }
